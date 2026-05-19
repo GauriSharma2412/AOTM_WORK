@@ -1,27 +1,297 @@
-<!doctype html>
-<html>
-<head><title>AOTM PROJECT</title>
-</head>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<a href=" work page.html">  
-<img src="images/back button.png"width="40px">
-</a>
-
-<header>
-This project is being developed and will be launched soon
-</header>
-
-
+<title>Arena Animation GTB Nagar</title>
 
 <style>
-header
-{
 
-font-family:verdana,arial black;
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+html
+{
+scroll-behavior:smooth;
+}
+
+body
+{
+background:#fffdf7;
+color:#222;
 }
 
 
 
+header
+{
+width:100%;
+background:#fff4cf;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px;
+position:sticky;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.logo
+{
+ display:flex;
+ gap:10px;
+}
+
+.logo img{
+    width:40%;
+height:50px;
+}
+
+.logo-text h2
+{
+font-size:20px;
+color:#c1121f;
+}
+
+.logo-text p
+{
+font-size:13px;
+color:#444;
+}
+
+nav ul
+{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+nav ul li a
+{
+text-decoration:none;
+color:#222;
+font-weight:500;
+transition:0.3s;
+}
+
+nav ul li a:hover
+{
+ color:#c1121f;
+}
+
+/*hero section */
+
+.hero
+{
+min-height:90vh;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:5% 7%;
+gap:40px;
+flex-wrap:wrap;
+}
+
+
+.hero-text h1
+{
+font-size:3.2rem;
+ line-height:1.2;
+ color:#c1121f;
+}
+
+.hero-text span
+{
+color:#ff9800;
+}
+
+.hero-text p
+{
+margin-top:20px;
+font-size:1rem;
+line-height:1.8;
+color:#555;
+}
+
+.hero-btn
+{
+margin-top:30px;
+}
+
+.hero-btn a
+{
+text-decoration:none;
+background:#c1121f;
+color:white;
+padding:14px 30px;
+border-radius:40px;
+font-weight:600;
+transition:0.3s;
+}
+
+.hero-btn a:hover
+{
+background:#ff9800;
+}
+
+.hero-image
+{
+ flex:1;
+ text-align:center;
+}
+
+.hero-image img
+{
+ width:100%;
+ max-width:500px;
+}
+
+/* COURSES */
+
+.section-title
+{
+text-align:center;
+font-size:2.3rem;
+margin-bottom:50px;
+color:#c1121f;
+}
+
+.courses
+{
+padding:80px 7%;
+}
+
+.course-container
+{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.course-card
+{
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:0 5px 15px rgba(0,0,0,0.08);
+transition:0.4s;
+}
+
+.course-card:hover
+{
+transform:translateY(-10px);
+}
+
+.course-card h3
+{
+margin-bottom:15px;
+color:#ff9800;
+}
+
+.course-card p
+{
+color:#555;
+line-height:1.7;
+}
+/* responsive */
+
+@media(max-width:768px){
+
+    .hero-text h1{
+        font-size:2.2rem;
+    }
+
+    nav ul{
+        gap:15px;
+    }
+
+}
 
 </style>
+</head>
+
+<body>
+
+
+
+<header>
+
+<div class="logo">
+<img src="images/logo.png" alt="Arena Logo">
+
+<div class="logo-text">
+ <h2>Arena Animation</h2>
+ <p>GTB Nagar</p>
+ </div>
+</div>
+
+<nav>
+ <ul>
+ <li><a href="#">Home</a></li>
+  <li><a href="#">Courses</a></li>
+  <li><a href="#">Contact us</a></li>
+  </ul>
+</nav>
+
+</header>
+
+<!-- hero -->
+
+<section class="hero">
+
+<div class="hero-text">
+
+<h1>Shape Your Creative Future With <span>Arena Animation</span></h1>
+
+<p>
+Learn Animation, VFX, Graphic Design, Gaming, UI/UX and Multimedia 
+with industry experts at Arena Animation GTB Nagar.
+</p>
+
+</div>
+
+<div class="hero-image">
+<img src="hero-image.png" alt="">
+</div>
+
+</section>
+
+<!-- courses -->
+
+<section class="courses">
+
+<h2 class="section-title">Popular Courses</h2>
+
+<div class="course-container">
+
+<div class="course-card">
+<h3>Animation</h3>
+<p>Master 2D & 3D animation with industry-level software and projects.</p>
+</div>
+
+<div class="course-card">
+<h3>VFX</h3>
+<p>Learn compositing, editing, CGI, motion graphics and visual effects.</p>
+</div>
+
+<div class="course-card">
+<h3>Graphic Design</h3>
+<p>Create professional branding, posters, UI designs and digital art.</p>
+</div>
+
+<div class="course-card">
+<h3>Gaming</h3>
+<p>Build gaming assets, characters and interactive experiences.</p>
+</div>
+
+</div>
+
+</section>
+
+</body>
+</html>
